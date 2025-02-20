@@ -1,4 +1,3 @@
-// LoginPage.js
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -24,7 +23,6 @@ function LoginPage({ setIsAuthenticated }) {
     e.preventDefault();
     const { email, password } = loginInfo;
 
-    // Validation
     if (!email || !password) {
       return handleError("Email and password are required");
     }
@@ -39,7 +37,6 @@ function LoginPage({ setIsAuthenticated }) {
       const result = await dispatch(login({ email, password }));
       if (result.success) {
         localStorage.setItem("token", result.jwtToken);
-        // Removed the line that sets the refresh token
         handleSuccess("Login successful!");
         setIsAuthenticated(true);
         navigate("/dashboard");

@@ -1,4 +1,3 @@
-// TaskList.js
 import React, { useState, useEffect, useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchTasks, createTask } from "../redux/api/taskApi";
@@ -7,8 +6,8 @@ import TaskForm from "./TaskForm";
 import Modal from "./Modal";
 import { ToastContainer } from "react-toastify";
 import { handleSuccess, handleError } from "../utils";
-import TaskFilter from "./TaskFilter"; // Import TaskFilter
-import TaskSort from "./TaskSort"; // Import TaskSort
+import TaskFilter from "./TaskFilter";
+import TaskSort from "./TaskSort";
 
 const TaskList = () => {
   const dispatch = useDispatch();

@@ -21,13 +21,10 @@ function Dashboard() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Fixed Navbar */}
       <Navbar />
 
-      {/* Dashboard Content */}
       <div className="flex-grow pt-29 md:pt-22 p-4">
         <div className="p-4 bg-white rounded shadow-md">
-          {/* Responsive Heading Alignment */}
           <h1 className="text-2xl font-bold mb-4 text-center md:text-left px-4">
             Dashboard
           </h1>
@@ -35,7 +32,6 @@ function Dashboard() {
         </div>
       </div>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

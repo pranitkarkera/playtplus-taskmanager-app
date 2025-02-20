@@ -1,34 +1,29 @@
-/* Light mode */
+
 body {
   background-color: white;
   color: black;
 }
 
-/* Dark mode */
 .dark body {
-  background-color: #1a202c; /* A dark background color */
-  color: white; /* Light text color */
+  background-color: #1a202c;
+  color: white;
 }
 
-/* Additional styles for dark mode */
 .dark h1, .dark h2, .dark h3, .dark p {
-  color: white; /* Ensure headings and paragraphs are visible */
+  color: white;
 }
 
-/* Sidebar Styles */
 .sidebar {
-  background-color: white; /* Light mode background */
-  color: black; /* Light mode text color */
+  background-color: white;
+  color: black;
 }
 
 .dark .sidebar {
-  background-color: #2d3748; /* Dark background for sidebar */
-  color: white; /* Light text color for sidebar */
+  background-color: #2d3748;
+  color: white;
 }
 
-/* Footer Styles */
-
 .dark .footer {
-  background-color: #2d3748; /* Dark background for footer */
-  color: white; /* Light text color for footer */
+  background-color: #2d3748;
+  color: white;
 }

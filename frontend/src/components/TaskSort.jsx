@@ -1,4 +1,3 @@
-// TaskSort.js
 import React from "react";
 
 const TaskSort = ({ sortBy, setSortBy, sortOrder, setSortOrder }) => {

@@ -1,4 +1,3 @@
-// taskApi.js
 import {
   getTasks,
   addTask,
@@ -9,7 +8,7 @@ import {
 
 const API_URL = import.meta.env.VITE_API_URL;
 
-// Fetch all tasks
+// fetch task
 export const fetchTasks = () => async (dispatch) => {
   const token = localStorage.getItem("token");
   if (!token) {
@@ -27,10 +26,10 @@ export const fetchTasks = () => async (dispatch) => {
     }
 
     const data = await response.json();
-    dispatch(getTasks(data.tasks)); // Dispatch action to store tasks in Redux
+    dispatch(getTasks(data.tasks));
   } catch (error) {
     console.error("Error fetching tasks:", error);
-    dispatch(setError(error.message)); // Dispatch error action
+    dispatch(setError(error.message));
   }
 };
 
@@ -59,10 +58,10 @@ export const createTask = (taskData) => async (dispatch) => {
     }
 
     const data = await response.json();
-    dispatch(addTask(data.task)); // Add the new task to the Redux store
+    dispatch(addTask(data.task));
   } catch (error) {
     console.error("Error creating task:", error);
-    throw error; // Rethrow the error to handle it in the component
+    throw error;
   }
 };
 
@@ -91,7 +90,7 @@ export const updateTaskApi = (taskId, taskData) => async (dispatch) => {
     }
 
     const data = await response.json();
-    dispatch(updateTask(data.task)); // Update the task in the Redux store
+    dispatch(updateTask(data.task));
   } catch (error) {
     console.error("Error updating task:", error);
   }
@@ -119,7 +118,7 @@ export const deleteTaskApi = (taskId) => async (dispatch) => {
       );
     }
 
-    dispatch(deleteTask(taskId)); // Remove the task from the Redux store
+    dispatch(deleteTask(taskId));
   } catch (error) {
     console.error("Error deleting task:", error);
   }

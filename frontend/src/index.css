@@ -1,19 +1,17 @@
 @import "tailwindcss";
 
-/* Additional Tailwind CSS styles for dark mode */
 .dark .bg-white {
-  background-color: #2d3748; /* Dark background for white elements */
+  background-color: #2d3748;
 }
 
 .dark .text-black {
-  color: white; /* Change text color to white in dark mode */
+  color: white;
 }
 
 .dark .border {
-  border-color: #4a5568; /* Darker border color for visibility */
+  border-color: #4a5568;
 }
 
-/* app.css or index.css */
 html, body {
   height: 100%;
   margin: 0;

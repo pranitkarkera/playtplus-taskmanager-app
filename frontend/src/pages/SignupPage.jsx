@@ -24,7 +24,6 @@ function SignupPage() {
     e.preventDefault();
     const { name, email, password } = signupInfo;
 
-    // Validation
     if (!name || !email || !password) {
       return handleError("Name, email, and password are required");
     }
@@ -43,7 +42,7 @@ function SignupPage() {
       if (result.success) {
         handleSuccess("Signup successful!");
         setTimeout(() => {
-          navigate("/login"); // Navigate to the login page after signup
+          navigate("/login");
         }, 1000);
       } else {
         handleError(result.message || "Signup failed");

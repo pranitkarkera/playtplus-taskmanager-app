@@ -1,4 +1,3 @@
-// TaskForm.js
 import React, { useState, useEffect } from "react";
 import { FiLoader } from "react-icons/fi";
 
@@ -22,7 +21,7 @@ const TaskForm = ({ initialData, onSubmit, onCancel }) => {
   }, [initialData]);
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
 
     if (!title.trim() || !description.trim()) {
       setError("Title and description are required.");
