@@ -1,5 +1,5 @@
 # PlaytPlus Task Manager App
---------------------------------------------
+
 # 🚀 Overview
 The PlaytPlus Task Manager App is a web-based application designed to help users manage their tasks efficiently. It provides features like task creation, updating, deletion, and tracking progress. The app ensures a smooth and intuitive user experience for managing daily tasks.
 
@@ -14,13 +14,21 @@ Other Tools: Axios, Nodemon, bcrypt.js
 
 # ✨ Features
 ✔️ User Authentication (Sign Up, Login, Logout)
+
 ✔️ Create, Read, Update, and Delete (CRUD) tasks
+
 ✔️ Task categorization and priority management
+
 ✔️ Due date and status tracking
+
 ✔️ Responsive UI with Tailwind CSS
+
 ✔️ Secure API endpoints with JWT authentication
+
 ✔️ Error handling and validation
+
 ✔️ Add pagination and infinite scroll for large task lists.
+
 ✔️ Deploy the app to a cloud platform (e.g., Vercel)
 
 # 🔧 Prerequisites
@@ -54,6 +62,7 @@ Open http://localhost:5000 in your browser.
 
 # 📂 Project Structure
 
+```
 playtplus-taskmanager-app/
 │── backend/                # Backend (Node.js + Express)
 │── frontend/               # Frontend (React.js)
@@ -65,6 +74,4 @@ playtplus-taskmanager-app/
 │── .env                    # Environment variables
 │── package.json            # Dependencies
 │── README.md               # Documentation
-
-# 🛡 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+```
