@@ -10,7 +10,7 @@ Password: guest@123
 
 | Method | Endpoint | Description |
 |----------|----------|----------|
-| GET | /api/tasks/:id | Get all tasks |
+| GET | /api/tasks/:id | Get specific task by ID |
 | POST | /api/tasks | Create a new task |
 | PUT | /api/tasks/:id | Update a task by ID |
 | DELETE | /api/tasks/:id | Delete a task by ID |
