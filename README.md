@@ -1,5 +1,21 @@
 # PlaytPlus Task Manager App
 
+[Frontend](https://playtplus-taskmanager-frontend.vercel.app/login)
+```
+Guest User Login:
+Email: guest@gmail.com
+Password: guest@123
+```
+[Backend](https://playtplus-taskmanager-backend.vercel.app/)
+
+| Method | Endpoint | Description |
+|----------|----------|----------|
+| GET | /api/tasks | Get all tasks |
+| GET | /api/tasks/:id | Get all tasks |
+| POST | /api/tasks | Create a new task |
+| PUT | /api/tasks/:id | Update a task by ID |
+| DELETE | /api/tasks/:id | Delete a task by ID |
+
 # 🚀 Overview
 The PlaytPlus Task Manager App is a web-based application designed to help users manage their tasks efficiently. It provides features like task creation, updating, deletion, and tracking progress. The app ensures a smooth and intuitive user experience for managing daily tasks.
 
