@@ -1,12 +1,12 @@
 # PlaytPlus Task Manager App
 
-[Frontend](https://playtplus-taskmanager-frontend.vercel.app/login)
+[Frontend Live Link 🔗](https://playtplus-taskmanager-frontend.vercel.app/login)
 ```
 Guest User Login:
 Email: guest@gmail.com
 Password: guest@123
 ```
-[Backend](https://playtplus-taskmanager-backend.vercel.app/)
+[Backend Live Link 🔗](https://playtplus-taskmanager-backend.vercel.app/)
 
 | Method | Endpoint | Description |
 |----------|----------|----------|
