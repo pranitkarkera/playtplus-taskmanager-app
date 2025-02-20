@@ -33,31 +33,36 @@ Other Tools: Axios, Nodemon, bcrypt.js
 
 # 🔧 Prerequisites
 Ensure you have the following installed:
-
+```
 Node.js (v14 or later)
 MongoDB (local or cloud instance)
 Git
-
+```
 # 📥 Installation
-1.Clone the repository
 
+1.Clone the repository
+```
 git clone https://github.com/pranitkarkera/playtplus-taskmanager-app.git
 cd playtplus-taskmanager-app
-
+```
 2.Install dependencies
+```
 npm install
-
+```
 3.Set up environment variables
-Create a .env file in the root directory and add the following:
 
+Create a .env file in the root directory and add the following:
+```
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
-
+```
 4.Run the application
+```
 npm start
-
+```
 5.Access the app
+
 Open http://localhost:5000 in your browser.
 
 # 📂 Project Structure
