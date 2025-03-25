@@ -48,6 +48,14 @@ function LoginPage({ setIsAuthenticated }) {
     }
   };
 
+  // Function to handle guest login
+  const handleGuestLogin = () => {
+    setLoginInfo({
+      email: "guest@gmail.com",
+      password: "Guest@123",
+    });
+  };
+
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
@@ -92,6 +100,14 @@ function LoginPage({ setIsAuthenticated }) {
             className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600 transition duration-200"
           >
             Login
+          </button>
+          {/* Guest Login Button */}
+          <button
+            type="button"
+            onClick={handleGuestLogin}
+            className="w-full mt-4 bg-gray-300 text-black p-2 rounded-md hover:bg-gray-400 transition duration-200"
+          >
+            Login as Guest
           </button>
           <div className="block text-center mt-4 p-2">
             <span className="text-gray-700">
